@@ -8,20 +8,20 @@ namespace BoletoNet
 
     public enum EnumCarteiras_Santander
     {
-        //101-Cobrança Simples Rápida COM Registro
+        //101-CobranÃ§a Simples RÃ¡pida COM Registro
         CobrancaSimplesComRegistro = 101,
-        //102- Cobrança simples – SEM Registro
+        //102- CobranÃ§a simples â€“ SEM Registro
         CobrancaSimplesSemRegistro = 102,
-        //201- Penhor Rápida com Registro
+        //201- Penhor RÃ¡pida com Registro
         PenhorRapida = 201
 
-  //CC - Cobrança Caucionada
-  //CD - Cobrança Descontada
-  //CSR - Cobrança Simples Sem Registro
-  //ECR - Cobrança Simples Com Registro
-  //ECR2 - Cobrança Simples Com Registro - Emissão Banco
-  //PENHOR - Penhor Rápida com Registro
-  //PENHOR-Eletron - Penhor Eletrônica com Registro
+  //CC - CobranÃ§a Caucionada
+  //CD - CobranÃ§a Descontada
+  //CSR - CobranÃ§a Simples Sem Registro
+  //ECR - CobranÃ§a Simples Com Registro
+  //ECR2 - CobranÃ§a Simples Com Registro - EmissÃ£o Banco
+  //PENHOR - Penhor RÃ¡pida com Registro
+  //PENHOR-Eletron - Penhor EletrÃ´nica com Registro
     }
     #endregion Enumerado
 
@@ -68,21 +68,21 @@ namespace BoletoNet
                 {
                     case EnumCarteiras_Santander.CobrancaSimplesComRegistro:
                         this.NumeroCarteira = (int)EnumCarteiras_Santander.CobrancaSimplesComRegistro;
-                        this.Codigo = "ECR";
+                        this.Codigo = "RCR";
                         this.Tipo = "";
-                        this.Descricao = "Cobrança Simples Com Registro";
+                        this.Descricao = "CobranÃ§a Simples RÃ¡pida Com Registro";
                         break;
                     case EnumCarteiras_Santander.CobrancaSimplesSemRegistro:
                         this.NumeroCarteira = (int)EnumCarteiras_Santander.CobrancaSimplesSemRegistro;
                         this.Codigo = "CSR";
                         this.Tipo = "";
-                        this.Descricao = "Cobrança Simples Sem Registro";
+                        this.Descricao = "CobranÃ§a Simples Sem Registro";
                         break;
                     case EnumCarteiras_Santander.PenhorRapida:
                         this.NumeroCarteira = (int)EnumCarteiras_Santander.PenhorRapida;
                         this.Codigo = "CSR";
                         this.Tipo = "";
-                        this.Descricao = "Penhor Rápida com Registro";
+                        this.Descricao = "Penhor RÃ¡pida com Registro";
                         break;
                     default:
                         this.NumeroCarteira = 0;
